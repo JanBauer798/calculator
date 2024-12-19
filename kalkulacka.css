@@ -1,0 +1,105 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #4facfe, #00f2fe);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Center the calculator */
+#formular {
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    text-align: center;
+}
+
+/* Style the heading */
+h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Calculator row: inputs, operation, and result */
+#calculator-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#vstup1, #vstup2 {
+    width: 80px;
+    height: 40px;
+    font-size: 1em;
+    text-align: center;
+    border: 2px solid #4facfe;
+    border-radius: 5px;
+    background: #2a2a2a;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#vstup1:focus, #vstup2:focus {
+    border-color: #00f2fe;
+}
+
+.operator {
+    font-size: 1.5em;
+    color: #00f2fe;
+    font-weight: bold;
+    width: 50px;
+    text-align: center;
+}
+
+#vysledek {
+    background: #1c1c1c;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 80px;
+    height: 20px;
+    text-align: center;
+    color: #00f2fe;
+}
+
+/* Buttons container */
+#buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Buttons styling */
+button {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    background: linear-gradient(120deg, #4facfe, #00f2fe);
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(120deg, #00f2fe, #4facfe);
+}
+
+button:active {
+    transform: scale(0.9);
+}

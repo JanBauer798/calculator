@@ -6,14 +6,20 @@
 </head>
 <body>
     <h1>Kalkulačka</h1>
-    <div id="vysledek"></div>
     <div id="formular">
-        <input id="vstup1">
-        <input id="vstup2">
-        <button type="button" id="tlPlus">Tl1</button>
-        <button type="button" id="tlMinus">Tl2</button>
-        <button type="button" id="tlKrat">Tl3</button>
-        <button type="button" id="tlDeleno">Tl4</button>
+        <div id="calculator-row">
+            <input id="vstup1" placeholder="Číslo 1">
+            <div id="operation" class="operator"></div>
+            <input id="vstup2" placeholder="Číslo 2">
+            <div class="operator">=</div>
+            <div id="vysledek"></div>
+        </div>
+        <div id="buttons">
+            <button type="button" id="tlPlus">+</button>
+            <button type="button" id="tlMinus">−</button>
+            <button type="button" id="tlKrat">×</button>
+            <button type="button" id="tlDeleno">÷</button>
+        </div>    
     </div>
 </body>
 </html>
