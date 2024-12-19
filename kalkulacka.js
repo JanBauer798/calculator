@@ -50,7 +50,7 @@ function hlavni(event) {
             } else if (operator === "÷") {
                 // Zero division handling.
                 if (var2 === 0) {
-                    num_res = "Nelze dělit.";
+                    num_res = "Nelze.";
                 } else {
                     num_res = var1 / var2;
                 }
